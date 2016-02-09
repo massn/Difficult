@@ -29,6 +29,7 @@ defmodule Difficult do
       :ok
 
   """
+  @spec ackerman_operation(binary, [atom]) :: binary
   def ackerman_operation(input, options \\ []) do
     if Enum.member?(options, :print), do: IO.inspect input
     _ackerman_operation input, options
