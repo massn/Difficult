@@ -12,6 +12,10 @@ defmodule Difficult.Mixfile do
        maintainers: ["Massn"],
        licenses: ["MIT"],
        links: %{"GitHub" => "https://github.com/massn/Difficult"}
+     ],
+     deps: [
+       {:ex_doc, "~> 0.11.4"},
+       {:earmark, ">= 0.0.0"}
      ]
    ]
   end
