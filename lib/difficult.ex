@@ -39,4 +39,7 @@ defmodule Difficult do
   defp _ackerman_operation(<< 0, m >> <> rest, options), do: ackerman_operation(<< 1, m - 1>> <> rest, options)
   defp _ackerman_operation(<< n, m >> <> rest, options), do: ackerman_operation(<< n - 1, m, m - 1>> <> rest, options)
 
+  def tarai(x, y, _z) when x <= y, do: y
+  def tarai(x, y, z), do: tarai(tarai(x - 1, y, z), tarai(y - 1, z, x), tarai(z - 1, x, y ))
+
 end
